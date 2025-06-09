@@ -7,7 +7,7 @@ This project has two phases:
 2. Load a small molecule dataset (e.g., SMILES).
 3. Generate molecular descriptors with RDKit.
 
-# 💊 Machine Learning-Driven Drug Discovery (ML-DD)
+# Machine Learning-Driven Drug Discovery (ML-DD)
 
 This repository is showing Machine learning project for drug discovery using small molecules. It is structured in two phases:
 
@@ -16,7 +16,7 @@ This repository is showing Machine learning project for drug discovery using sma
 
 ---
 
-## 🧠 Project Goals
+## Project Goals
 
 - Learn how to use **SMILES** strings to derive molecular features.
 - Apply **machine learning models** to solve regression and classification problems in cheminformatics.
@@ -24,7 +24,7 @@ This repository is showing Machine learning project for drug discovery using sma
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ML-Driven-Drug-Discovery
   data collection # Sample or processed datasets
@@ -36,7 +36,7 @@ ML-Driven-Drug-Discovery
 
 ---
 
-## 🛠️ Tools & Libraries
+## Tools & Libraries
 
 - Python 3.8+
 - [RDKit](https://www.rdkit.org/)
@@ -46,7 +46,7 @@ ML-Driven-Drug-Discovery
 
 ---
 
-## 📦 Installation
+## Installation
 
 1. Clone the repo:
    ```bash
@@ -63,39 +63,30 @@ Input: SMILES strings
 Output: Predicted QED scores
 Run notebooks/01_qed_prediction.ipynb
 
-** Phase 2: Bioactivity Classification
+**Phase 2: Bioactivity Classification**
 Input: Molecules labeled as active/inactive
-
 Output: Binary classification (active or not)
 
-👉 Run notebooks/02_bioactivity_classification.ipynb
+Run notebooks/02_bioactivity_classification.ipynb
 
-🧪 Sample Descriptors Used
-Molecular Weight
+**Descriptors Used**
+1. Molecular Weight
+2. LogP (lipophilicity)
+3. Hydrogen Bond Donors/Acceptors
+4. Topological Polar Surface Area (TPSA)
+5. Rotatable Bonds
 
-LogP (lipophilicity)
+**Model Types**
+1. QED Prediction: Random Forest Regressor
+2. Bioactivity Classification: Random Forest / Logistic Regression
 
-Hydrogen Bond Donors/Acceptors
+**References**
+1. RDKit: https://www.rdkit.org/
+2. ChEMBL Database: https://www.ebi.ac.uk/chembl/
+3. DeepChem / MoleculeNet: https://deepchem.io/
 
-Topological Polar Surface Area (TPSA)
-
-Rotatable Bonds
-
-📊 Model Types
-QED Prediction: Random Forest Regressor
-
-Bioactivity Classification: Random Forest / Logistic Regression
-
-📚 References
-RDKit: https://www.rdkit.org/
-
-ChEMBL Database: https://www.ebi.ac.uk/chembl/
-
-DeepChem / MoleculeNet: https://deepchem.io/
-
-✍️ Author
-Mala Sharma
-Ph.D. in Bioinformatics | ML & Computational Biology Enthusiast
-📍 Chicago, IL
-📫 bio.rsrch18@gmail.com
-🔗 GitHub | Google Scholar
+**-Mala Sharma**
+   Ph.D. in Bioinformatics | ML & Computational Biology Enthusiast
+   Chicago, IL
+   bio.rsrch18@gmail.com
+  🔗 GitHub | Google Scholar
